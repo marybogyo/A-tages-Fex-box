@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+h1 {
+  color: gray;
+  padding: 15px;
+}
+header.box {
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+nav.start {
+  border: 1px solid gray;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(197, 191, 191);
+}
+
+div.menu a {
+  text-decoration: none;
+  color: red;
+  border-left: 1px solid gray;
+  padding: 15px;
+}
+.menu {
+  flex-direction: row-reverse;
+  display: flex;
+}
+section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+nav a {
+  color: red;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+ 
+ }
+.red a {
+  color: white;
+  background-color: red;
+padding: 15px;
+  
+  
+}
+footer nav {
+  display: flex;
+  border: 1px solid gray;
+  border-radius: 5px;
+  justify-content: center;
+  padding: 5px;
+
+  
+}
+footer{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 5px;
+    
+}
+article header{
+    background-color: red;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+article{
+    flex: 0 0 calc(25% - 10px);
+    gap: 5px;
+    background-color: rgb(155, 152, 152);
+    margin: 5px;
+}
+p{
+    padding: 10px;
+    color: beige;
+    margin: 5px;
+}
+@media all and (max-width:500px){
+    section{
+        flex-flow: column wrap;
+    }
+}
